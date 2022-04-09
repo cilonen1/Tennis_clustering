@@ -1,9 +1,7 @@
 import pandas as pd#start seas 18-19
 import numpy as np
 import datetime as dt
-from collections import defaultdict
 import time
-from sklearn.ensemble import RandomForestRegressor
 from sklearn import tree
 from sklearn.metrics import mean_absolute_error
 from sklearn.cluster import KMeans
