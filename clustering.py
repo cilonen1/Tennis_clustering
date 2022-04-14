@@ -5,7 +5,6 @@ import time
 from sklearn import tree
 from sklearn.metrics import mean_absolute_error
 from sklearn.cluster import KMeans
-import seaborn as sns
 from datetime import date
 
 def count_sum(continent, ctry_border, feat, cols, year, kmeans, cl_num):
