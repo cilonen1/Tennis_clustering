@@ -3,7 +3,6 @@ import numpy as np
 import datetime as dt
 import time
 from sklearn import tree
-from sklearn.metrics import mean_absolute_error
 from sklearn.cluster import KMeans
 from datetime import date
 
