@@ -44,6 +44,8 @@ def full_cycle(continent, year=2019):
     print('process!')
     ctry_border = {'WE': [2790, 8624], 'US': [7779, 1340], 'S.Am': [3331, 6609], 'EastEu': [7489, 1335],
                 'WE_Clay': [3071, 11888]}
+    ctry_border = {'WE': [2790, 8624], 'US': [7779, 1340], 'S.Am': [3331, 6609], 'EastEu': [7489, 1335],
+                'WE_Clay': [3071, 11888]}
     cols = ['Date','Loc','Rd','PL1','PL2','k1','k2','П1','П2','Total rate','Total1','Total2', 'Games1' ,'Games2',
             'Poi_s1','Poi_s2','Poi_t1','Poi_t2', 'Surf p','Surf1','Surf2','2m point','Diff', 'Rank1','Rank2','win','loss']
     dx = pd.read_excel(r'C:\Users\cilon\OneDrive\Desktop\New-Tennis\CHAL16-21(F).xlsx',header=0, sheet_name='Archive')[:26597][cols]
