@@ -1,10 +1,8 @@
 import pandas as pd#start seas 18-19
 import numpy as np
-import datetime as dt
-import time
 from sklearn import tree
 from sklearn.cluster import KMeans
-from datetime import date
+
 
 def count_sum(continent, ctry_border, feat, cols, year, kmeans, cl_num):
     st, end = ctry_border[continent]
