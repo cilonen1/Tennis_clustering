@@ -12,8 +12,7 @@ def count_sum(continent, ctry_border, feat, cols, year, kmeans, cl_num):
     df_cont['Date'] = pd.to_datetime(df_cont.Date, dayfirst=True)
     df_cont_cluster = df_cont[df_cont.Rd.isin(['F', 'SF', 'QF'])].copy()
     X_tr = df_cont_cluster[feat]
-    kmeans.fit(X_tr)
-    df_cont_cluster['label'] = kmeans.labels_
+    df_cont_cluster['label'] = kmeans.predict(X_tr)
     label_feat = ['Total rate', '2m point']
     df_final = pd.DataFrame()
     b_date = pd.to_datetime(f'{year}-01-01', dayfirst=True)
